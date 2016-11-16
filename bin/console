@@ -1,0 +1,18 @@
+#!/usr/bin/env ruby
+
+require 'bundler/setup'
+require 'comicvine/mongo'
+
+# You can add fixtures and/or initialization code here to make experimenting
+# with your gem easier. You can also use a different console, if you like.
+
+# (If you use this, don't forget to add pry to your Gemfile!)
+# require "pry"
+# Pry.start
+
+ENV['RACK_ENV'] = 'development'
+#Mongoid.load!(File.join(File.expand_path('../../test', __FILE__), 'mongo.yml'), ENV['RACK_ENV'])
+
+
+require 'irb'
+IRB.start

@@ -1,0 +1,6 @@
+test:
+  clients:
+    default:
+      database: test_comicvine_mongo
+      hosts:
+        - localhost:27017
