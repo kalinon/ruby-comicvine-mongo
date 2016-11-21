@@ -259,7 +259,7 @@ module ComicVine
 
       has_and_belongs_to_many :creators, class_name: 'ComicVine::Resource::Person', inverse_of: :created_characters, validate: false
 
-      belongs_to :first_appeared_in_issue, class_name: 'ComicVine::Resource::Issue', inverse_of: :first_appearance_characters, validate: false
+      belongs_to :first_appeared_in_issue, class_name: 'ComicVine::Resource::Issue', inverse_of: :first_appearance_characters, validate: false, optional: true
       has_and_belongs_to_many :issue_credits, class_name: 'ComicVine::Resource::Issue', inverse_of: :character_credits, validate: false
       has_and_belongs_to_many :issues_died_in, class_name: 'ComicVine::Resource::Issue', inverse_of: :character_died_in, validate: false
 

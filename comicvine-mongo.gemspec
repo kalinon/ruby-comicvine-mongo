@@ -34,6 +34,6 @@ Gem::Specification.new do |spec|
   #spec.add_development_dependency 'yard-mongoid', '~> 0.0.4' # pending merge acceptance and update
 
   # Dependencies
-  spec.add_dependency 'comicvine', '~> 0.1', '>= 0.1.2'
+  spec.add_dependency 'comicvine', '~> 0.1', '>= 0.1.3'
   spec.add_dependency 'mongoid', '~> 6.0', '>= 6.0.2'
 end

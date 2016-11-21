@@ -28,7 +28,7 @@ task :default => :test
 task :console do
   require 'irb'
   require 'irb/completion'
-  require 'comicvine/scraper' # You know what to do.
+  require 'comicvine/mongo' # You know what to do.
   ARGV.clear
   IRB.start
 end
