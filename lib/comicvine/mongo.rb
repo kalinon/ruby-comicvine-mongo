@@ -314,7 +314,7 @@ module ComicVine
         self[:count_of_issue_appearances]
       end
 
-      belongs_to :first_appeared_in_issue, class_name: 'ComicVine::Resource::Issue', inverse_of: :first_appearance_concepts, validate: false
+      belongs_to :first_appeared_in_issue, class_name: 'ComicVine::Resource::Issue', inverse_of: :first_appearance_concepts, validate: false, optional: true
       has_and_belongs_to_many :issue_credits, class_name: 'ComicVine::Resource::Issue', inverse_of: :concept_credits, validate: false
       has_and_belongs_to_many :movies, class_name: 'ComicVine::Resource::Movie', inverse_of: :concept_credits, validate: false
       has_and_belongs_to_many :volume_credits, class_name: 'ComicVine::Resource::Volume', inverse_of: :concepts, validate: false
@@ -402,7 +402,7 @@ module ComicVine
       field :site_detail_url, type: String
       field :start_year, type: Integer
 
-      belongs_to :first_appeared_in_issue, class_name: 'ComicVine::Resource::Issue', inverse_of: :first_appearance_locations, validate: false
+      belongs_to :first_appeared_in_issue, class_name: 'ComicVine::Resource::Issue', inverse_of: :first_appearance_locations, validate: false, optional: true
       has_and_belongs_to_many :issue_credits, class_name: 'ComicVine::Resource::Issue', inverse_of: :location_credits, validate: false
 
       has_and_belongs_to_many :movies, class_name: 'ComicVine::Resource::Movie', inverse_of: :location_credits, validate: false
@@ -485,7 +485,7 @@ module ComicVine
       field :site_detail_url, type: String
       field :start_year, type: Integer
 
-      belongs_to :first_appeared_in_issue, class_name: 'ComicVine::Resource::Issue', inverse_of: :first_appearance_characters, validate: false
+      belongs_to :first_appeared_in_issue, class_name: 'ComicVine::Resource::Issue', inverse_of: :first_appearance_characters, validate: false, optional: true
       has_and_belongs_to_many :issue_credits, class_name: 'ComicVine::Resource::Issue', inverse_of: :object_credits, validate: false
       has_and_belongs_to_many :movies, class_name: 'ComicVine::Resource::Movie', inverse_of: :objects, validate: false
       has_and_belongs_to_many :story_arc_credits, class_name: 'ComicVine::Resource::StoryArc', inverse_of: :objects, validate: false
@@ -701,7 +701,7 @@ module ComicVine
 
       belongs_to :publisher, class_name: 'ComicVine::Resource::Publisher', inverse_of: :story_arcs, validate: false
 
-      belongs_to :first_appeared_in_issue, class_name: 'ComicVine::Resource::Issue', inverse_of: :first_appearance_storyarcs, validate: false
+      belongs_to :first_appeared_in_issue, class_name: 'ComicVine::Resource::Issue', inverse_of: :first_appearance_storyarcs, validate: false, optional: true
       has_and_belongs_to_many :issues, class_name: 'ComicVine::Resource::Issue', inverse_of: :story_arc_credits, validate: false
 
       has_and_belongs_to_many :movies, class_name: 'ComicVine::Resource::Movie', inverse_of: :story_arc_credits, validate: false
@@ -768,7 +768,7 @@ module ComicVine
       has_and_belongs_to_many :character_friends, class_name: 'ComicVine::Resource::Character', inverse_of: nil, validate: false
       has_and_belongs_to_many :characters, class_name: 'ComicVine::Resource::Character', inverse_of: :teams, validate: false
 
-      belongs_to :first_appeared_in_issue, class_name: 'ComicVine::Resource::Issue', inverse_of: :first_appearance_teams, validate: false
+      belongs_to :first_appeared_in_issue, class_name: 'ComicVine::Resource::Issue', inverse_of: :first_appearance_teams, validate: false, optional: true
       has_and_belongs_to_many :issue_credits, class_name: 'ComicVine::Resource::Issue', inverse_of: :team_credits, validate: false
       has_and_belongs_to_many :issues_disbanded_in, class_name: 'ComicVine::Resource::Issue', inverse_of: :team_disbanded_in, validate: false
 
