@@ -226,7 +226,7 @@ module ComicVine
       has_and_belongs_to_many :objects, class_name: 'ComicVine::Resource::Object', inverse_of: :volume_credits, validate: false
       has_and_belongs_to_many :people, class_name: 'ComicVine::Resource::Person', inverse_of: :volume_credits, validate: false
 
-      belongs_to :publisher, class_name: 'ComicVine::Resource::Publisher', inverse_of: :volumes, validate: false
+      belongs_to :publisher, class_name: 'ComicVine::Resource::Publisher', inverse_of: :volumes, validate: false, optional: true
 
     end
 
@@ -266,7 +266,7 @@ module ComicVine
       has_and_belongs_to_many :movies, class_name: 'ComicVine::Resource::Movie', inverse_of: :characters, validate: false
       has_and_belongs_to_many :powers, class_name: 'ComicVine::Resource::Power', inverse_of: :characters, validate: false
 
-      belongs_to :publisher, class_name: 'ComicVine::Resource::Publisher', inverse_of: :characters, validate: false
+      belongs_to :publisher, class_name: 'ComicVine::Resource::Publisher', inverse_of: :characters, validate: false, optional: true
       has_and_belongs_to_many :story_arc_credits, class_name: 'ComicVine::Resource::StoryArc', inverse_of: :characters, validate: false
 
       has_and_belongs_to_many :team_enemies, class_name: 'ComicVine::Resource::Team', inverse_of: nil, validate: false
@@ -379,7 +379,7 @@ module ComicVine
       has_and_belongs_to_many :team_credits, class_name: 'ComicVine::Resource::Team', inverse_of: nil, validate: false
 
       has_and_belongs_to_many :story_arc_credits, class_name: 'ComicVine::Resource::StoryArc', inverse_of: :episodes, validate: false
-      belongs_to :series, class_name: 'ComicVine::Resource::Series', inverse_of: :episodes, validate: false
+      belongs_to :series, class_name: 'ComicVine::Resource::Series', inverse_of: :episodes, validate: false, optional: true
     end
 
     ##
@@ -667,7 +667,7 @@ module ComicVine
       has_one :last_episode, class_name: 'ComicVine::Resource::Episode', validate: false
 
       has_and_belongs_to_many :location_credits, class_name: 'ComicVine::Resource::Location', inverse_of: nil, validate: false
-      belongs_to :publisher, class_name: 'ComicVine::Resource::Publisher', inverse_of: :series, validate: false
+      belongs_to :publisher, class_name: 'ComicVine::Resource::Publisher', inverse_of: :series, validate: false, optional: true
     end
 
     ##
@@ -699,7 +699,7 @@ module ComicVine
       end
 
 
-      belongs_to :publisher, class_name: 'ComicVine::Resource::Publisher', inverse_of: :story_arcs, validate: false
+      belongs_to :publisher, class_name: 'ComicVine::Resource::Publisher', inverse_of: :story_arcs, validate: false, optional: true
 
       belongs_to :first_appeared_in_issue, class_name: 'ComicVine::Resource::Issue', inverse_of: :first_appearance_storyarcs, validate: false, optional: true
       has_and_belongs_to_many :issues, class_name: 'ComicVine::Resource::Issue', inverse_of: :story_arc_credits, validate: false
@@ -772,7 +772,7 @@ module ComicVine
       has_and_belongs_to_many :issue_credits, class_name: 'ComicVine::Resource::Issue', inverse_of: :team_credits, validate: false
       has_and_belongs_to_many :issues_disbanded_in, class_name: 'ComicVine::Resource::Issue', inverse_of: :team_disbanded_in, validate: false
 
-      belongs_to :publisher, class_name: 'ComicVine::Resource::Publisher', inverse_of: :teams, validate: false
+      belongs_to :publisher, class_name: 'ComicVine::Resource::Publisher', inverse_of: :teams, validate: false, optional: true
       has_and_belongs_to_many :movies, class_name: 'ComicVine::Resource::Movie', inverse_of: :teams, validate: false
       has_and_belongs_to_many :story_arc_credits, class_name: 'ComicVine::Resource::StoryArc', inverse_of: :teams, validate: false
       has_and_belongs_to_many :volume_credits, class_name: 'ComicVine::Resource::Volume', inverse_of: :teams, validate: false
