@@ -145,7 +145,7 @@ module ComicVine
       field :has_staff_review, type: Hash
       field :id, type: Integer
       field :image, type: Hash
-      field :issue_number, type: Integer
+      field :issue_number, type: String
       field :name, type: String
       field :site_detail_url, type: String
       field :store_date, type: Date
