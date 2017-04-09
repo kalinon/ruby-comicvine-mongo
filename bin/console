@@ -11,7 +11,7 @@ require 'comicvine/mongo'
 # Pry.start
 
 ENV['RACK_ENV'] = 'development'
-#Mongoid.load!(File.join(File.expand_path('../../test', __FILE__), 'mongo.yml'), ENV['RACK_ENV'])
+Mongoid.load!(File.join(File.expand_path('../../test', __FILE__), 'mongo.yml'), ENV['RACK_ENV'])
 
 
 require 'irb'
