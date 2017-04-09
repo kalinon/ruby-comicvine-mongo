@@ -134,6 +134,7 @@ module ComicVine
     class Issue < ComicVine::Resource
       include Mongoid::Document
       include ComicVine::Mongo
+      include Mongoid::Attributes::Dynamic
 
       field :aliases, type: String
       field :api_detail_url, type: String
@@ -200,6 +201,7 @@ module ComicVine
     class Volume < ComicVine::Resource
       include Mongoid::Document
       include ComicVine::Mongo
+      include Mongoid::Attributes::Dynamic
 
       field :aliases, type: String
       field :api_detail_url, type: String
@@ -236,6 +238,7 @@ module ComicVine
     class Character < ComicVine::Resource
       include Mongoid::Document
       include ComicVine::Mongo
+      include Mongoid::Attributes::Dynamic
 
       field :aliases, type: String
       field :api_detail_url, type: String
@@ -284,6 +287,7 @@ module ComicVine
     class Concept < ComicVine::Resource
       include Mongoid::Document
       include ComicVine::Mongo
+      include Mongoid::Attributes::Dynamic
 
       field :aliases, type: String
       field :api_detail_url, type: String
@@ -327,6 +331,7 @@ module ComicVine
     class Episode < ComicVine::Resource
       include Mongoid::Document
       include ComicVine::Mongo
+      include Mongoid::Attributes::Dynamic
 
       field :aliases, type: String
       field :api_detail_url, type: String
@@ -388,6 +393,7 @@ module ComicVine
     class Location < ComicVine::Resource
       include Mongoid::Document
       include ComicVine::Mongo
+      include Mongoid::Attributes::Dynamic
 
       field :aliases, type: String
       field :api_detail_url, type: String
@@ -416,6 +422,7 @@ module ComicVine
     class Movie < ComicVine::Resource
       include Mongoid::Document
       include ComicVine::Mongo
+      include Mongoid::Attributes::Dynamic
 
       field :api_detail_url, type: String
       field :box_office_revenue, type: Integer
@@ -471,6 +478,7 @@ module ComicVine
     class Object < ComicVine::Resource
       include Mongoid::Document
       include ComicVine::Mongo
+      include Mongoid::Attributes::Dynamic
 
       field :aliases, type: String
       field :api_detail_url, type: String
@@ -498,6 +506,7 @@ module ComicVine
     class Origin < ComicVine::Resource
       include Mongoid::Document
       include ComicVine::Mongo
+      include Mongoid::Attributes::Dynamic
 
       field :api_detail_url, type: String
       field :character_set, type: String
@@ -515,6 +524,7 @@ module ComicVine
     class Person < ComicVine::Resource
       include Mongoid::Document
       include ComicVine::Mongo
+      include Mongoid::Attributes::Dynamic
 
       field :aliases, type: String
       field :api_detail_url, type: String
@@ -581,6 +591,7 @@ module ComicVine
     class Power < ComicVine::Resource
       include Mongoid::Document
       include ComicVine::Mongo
+      include Mongoid::Attributes::Dynamic
 
       field :aliases, type: String
       field :api_detail_url, type: String
@@ -599,6 +610,7 @@ module ComicVine
     class Promo < ComicVine::Resource
       include Mongoid::Document
       include ComicVine::Mongo
+      include Mongoid::Attributes::Dynamic
 
       field :api_detail_url, type: String
       field :date_added, type: DateTime
@@ -617,6 +629,7 @@ module ComicVine
     class Publisher < ComicVine::Resource
       include Mongoid::Document
       include ComicVine::Mongo
+      include Mongoid::Attributes::Dynamic
 
       field :aliases, type: String
       field :api_detail_url, type: String
@@ -645,6 +658,7 @@ module ComicVine
     class Series < ComicVine::Resource
       include Mongoid::Document
       include ComicVine::Mongo
+      include Mongoid::Attributes::Dynamic
 
       field :aliases, type: String
       field :api_detail_url, type: String
@@ -676,6 +690,7 @@ module ComicVine
     class StoryArc < ComicVine::Resource
       include Mongoid::Document
       include ComicVine::Mongo
+      include Mongoid::Attributes::Dynamic
 
       field :aliases, type: String
       field :api_detail_url, type: String
@@ -718,6 +733,7 @@ module ComicVine
     class Team < ComicVine::Resource
       include Mongoid::Document
       include ComicVine::Mongo
+      include Mongoid::Attributes::Dynamic
 
       field :aliases, type: String
       field :api_detail_url, type: String
