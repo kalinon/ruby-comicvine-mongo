@@ -31,6 +31,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'minitest-reporters', '~> 1.1', '>= 1.1.12'
   spec.add_development_dependency 'rdoc', '~> 4.2', '>= 4.2.1'
   spec.add_development_dependency 'yard', '~> 0.9', '>= 0.9.5'
+  spec.add_development_dependency 'dotenv-rails'
   #spec.add_development_dependency 'yard-mongoid', '~> 0.0.4' # pending merge acceptance and update
 
   # Dependencies
