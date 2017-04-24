@@ -6,7 +6,6 @@ require 'mongoid'
 # @!macro [new] return.sub_resources
 #   @return [ Resource::Character, Resource::Concept, Resource::Episode, Resource::Issue, Resource::Location, Resource::Movie, Resource::Object, Resource::Origin, Resource::Person, Resource::Power, Resource::Promo, Resource::Publisher, Resource::Series, Resource::StoryArc, Resource::Team, Resource::Volume ]
 
-
 module ComicVine
 
   ##
@@ -95,6 +94,28 @@ module ComicVine
         end
       end
     end
+
+    ##
+    # Method to fetch info from ComicVine and save
+    # @return [ComicVine::Resource]
+    # @since 0.1.5
+    def fetch_and_update!
+      fetch!
+      save!
+      self
+    end
+
+    ##
+    # Method to fetch info from ComicVine and save assoc objects
+    # @return [ComicVine::Resource]
+    # @since 0.1.5
+    def fetch_and_update_assoc!
+      fetch!
+      save!
+      save_assoc!
+      self
+    end
+
   end
 
   class Resource
@@ -553,7 +574,7 @@ module ComicVine
         if value.nil?
           # Do nothing
         elsif value.kind_of?(Hash) && value.has_key?('date')
-         # Translate the string
+          # Translate the string
           #TODO: Parse the remaining keys: timezone_type && timezone into correct dateTime. See person: 2756
           super DateTime.parse(value['date'])
         elsif value.kind_of?(DateTime)
