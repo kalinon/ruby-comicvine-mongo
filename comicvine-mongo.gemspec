@@ -11,7 +11,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{Mongo extension to the comicvine gem}
   spec.description   = %q{Allows saving of comicvine resources to a Mongodb using Mongoid}
-  spec.homepage      = 'https://github.com/kalinon/ruby-comicvine-mongo'
+  spec.homepage      = 'https://github.com/spoved/ruby-comicvine-mongo'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
@@ -31,7 +31,8 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'minitest-reporters', '~> 1.1', '>= 1.1.12'
   spec.add_development_dependency 'rdoc', '~> 4.2', '>= 4.2.1'
   spec.add_development_dependency 'yard', '~> 0.9', '>= 0.9.5'
-  #spec.add_development_dependency 'yard-mongoid', '~> 0.0.4' # pending merge acceptance and update
+  spec.add_development_dependency 'dotenv-rails'
+  spec.add_development_dependency 'yard-mongoid', '~> 0.1.0'
 
   # Dependencies
   spec.add_dependency 'comicvine', '~> 0.1', '>= 0.1.3'

@@ -4,3 +4,9 @@ test:
       database: test_comicvine_mongo
       hosts:
         - localhost:27017
+development:
+  clients:
+    default:
+      database: development_comicvine_mongo
+      hosts:
+        - localhost:27017
