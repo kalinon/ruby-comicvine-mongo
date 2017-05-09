@@ -13,7 +13,7 @@ end
 
 YARD::Rake::YardocTask.new do |t|
   begin
-    #require 'yard-mongoid'
+    require 'yard-mongoid'
   rescue LoadError => e
     puts 'Could not require yard-mongoid'
   end
