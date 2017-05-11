@@ -33,8 +33,9 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'yard', '~> 0.9', '>= 0.9.5'
   spec.add_development_dependency 'dotenv-rails'
   spec.add_development_dependency 'yard-mongoid', '~> 0.1.0'
+  spec.add_development_dependency 'minitest-vcr', '~> 1.4'
 
   # Dependencies
-  spec.add_dependency 'comicvine', '~> 0.1', '>= 0.1.3'
+  spec.add_dependency 'comicvine', '~> 0.1', '>= 0.1.4'
   spec.add_dependency 'mongoid', '~> 6.0', '>= 6.0.2'
 end

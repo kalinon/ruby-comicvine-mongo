@@ -1,0 +1,109 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://comicvine.gamespot.com/api/concept/4015-35070/?api_key={CV_API_KEY}&format=json&id=35070
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin16.4.0 x86_64) ruby/2.3.3p222
+      Host:
+      - comicvine.gamespot.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.8.0
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - PHP/5.6.6
+      Set-Cookie:
+      - device_view=full; expires=Sun, 11-Jun-2017 13:54:49 GMT; Max-Age=2678400;
+        path=/; httponly
+      - satcv=c5e367ff67d9d196632171024080fe6d; path=/; domain=.comicvine.gamespot.com;
+        HttpOnly
+      Cache-Control:
+      - no-cache
+      Date:
+      - Thu, 11 May 2017 13:54:49 GMT
+      X-Phoenix-Cache-Expires:
+      - 05-11-2017 06:59:49
+      X-Phoenix-Cached:
+      - 'false'
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        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
+    http_version: 
+  recorded_at: Thu, 11 May 2017 13:54:49 GMT
+- request:
+    method: get
+    uri: https://comicvine.gamespot.com/api/types/?api_key={CV_API_KEY}&format=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin16.4.0 x86_64) ruby/2.3.3p222
+      Host:
+      - comicvine.gamespot.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.8.0
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - PHP/5.6.6
+      Set-Cookie:
+      - device_view=full; expires=Sun, 11-Jun-2017 13:58:39 GMT; Max-Age=2678400;
+        path=/; httponly
+      - satcv=7de7a5bc42c6d9982e0fff6e1695137d; path=/; domain=.comicvine.gamespot.com;
+        HttpOnly
+      Cache-Control:
+      - no-cache
+      Date:
+      - Thu, 11 May 2017 13:54:42 GMT
+      X-Phoenix-Cache-Expires:
+      - 05-11-2017 06:59:42
+      X-Phoenix-Cached:
+      - 'true'
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA43UUW6DMAwG4Lv4GU1A6SpxhT3sANOE0uC2maCOktCpqnr3hVAIkxZ3b0i/9ck2hhugMWSghvc3yKBTvXJQl3kGdDhY9M/+8Tz0ezQNHRotjtgYtEPn7FQWM0dOdL9D64QbbCOpRaiLDJbw4wYtOqFCPQ1GYnMWvS8CeRJGSIcmdGNdusD6CtVCXeX59p5xoGMsNzNltc05hs4SdVqa4thTwfWEWtlxJwnsEUdsx3WmrB2SVAhXm+KgjqRwis4pa84jV3JcTxeV7CuEK4jbFu2/UCY3P6WR2rKUUUeVHHBKI7XhxtP+AtO70ki6w0WqWIm+0+cewlVL3HTaUE9JaAxnqNixl6CHvTdOTFdzwergOdCimV73n9qSPq6dm9E6MtdGGJnE5oIIVhzoUPQpa8wi88pNeFEtJncfwuVHs8mfQo27amS1UBHJ8jnpP148+t3w7KNK/dumbujTrYZ09XHm988MLv5uxv9MDcVLDvcf1+vV4oQGAAA=
+    http_version: 
+  recorded_at: Thu, 11 May 2017 13:58:39 GMT
+recorded_with: VCR 3.0.3
