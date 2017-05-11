@@ -53,4 +53,57 @@ http_interactions:
         H4sIAAAAAAAAA61bf2/bOBL9KoT/6R4QJZIt2XKw2EOaoi3aTQs0t1scLouAlmibMSVqScqud9HvfkPKkWheD2gpIkDiicX35ok/Zoai/p4QIbiYXE8+vp9cTBitqJpcJxcTvl5LAh/ji0ndVisiHvn6scEb8iiIbJmS5qrhK8UVZmffSYVVKx8LXhJj99/9PcENfSyJwpQ9toIB+VapRl4/XD1cFbyixZ7W5HKDKyIbri7hXw9X0OThquJ7Sh6u0niaRcnDFTi84l+AfU0L7dee1C1wTZJ4kcXLxXKpL2jLjdYxSWYxmMUWC1woIsCP//g70sNoZ2JwJl4sMuMQLUGstuDmQDuAvKnLI/qMxZYz+F5SRX6YEhCig0Fw+L5ehNMwn8dp0mswVq/hJRE1FqWn/6uutcMT1PfZYmb5rq3Bd7pBr+mmFcTXfbqJ1gbAYQuqYBEv8kGBtgYF7QpLRaWv/6fmDlNI79N0msa998bqvb/FDRDU6I4owRvOvHUUHVBU9UAOe0hFWb6YT3tFxuoVvcJ7WqKX/EB9h1SpEaKVRnD4go6pJfwMY0pbgwaiSKHonsDcqL1lPIPA/KiJwxpSyWyRpYteibEGJbTYoVu8J0r5ygCEqDAIDl9IDUmeLtMhRmhr0MAZwwK9pMw3RpQGIVoBgsMXUsMinuWzXoOxLA3tBn3iauutoN1EAto7XGFjXL6cWTEOrMF/cYnuMCs4q9CvvN74yhBR1aFEDFAc4qCLbpxNh0lhLEdMvcVK4XqMkhOEQxl0bi8X6bDSGquX8ZqWhMHklrDie6pYawiY3RrCYQwbv2dJZsVvsHoVb4jArERvBKSpnio2BiLaaAiHMaiKPI+HOG6sXsVb3DRH9BYLcfQUsdUI0VYjOHyh16j0bI0a1tm3EK64QG94uRbEW4YBiTYdiMMadGZkc2uCG8tSUosjek+lpDUMDm8pgBLtnlEc3rAZ4sLKRYw1aOFQI5boXQtZqvcM2RqQ6KkDcVjDrldTOxfRVq/kHS52lKD3pK5J6Tu+ngxItOtAHNawa1aa2TUHWJaSmhzRPcPKe3A9aYhIGgiHMWh/zKAYHvpDW4MKvq3R68uxHQIo0drtkBNt2OU3yawyVlu9lF/xQZDae3qwU3OHKWiCO1/OhuTKWIP3hNe6ZhLkr21N9r4iDEq0OqE4vKF7YnrWE0NSckfhauKbqFdda4cnpO/TOMmHVMRYtu879A5v/ENGpYulJ4Pg8AUNF9kyGcaSsQYNnPFii9SWoLujXu19lRicCHCiyuA43EH7ZJnHw1JrLEuP2lbeWXrVtXZ4gvbFbDodEipj9b5/AI/RxwNDP70ShK6I2PzDU0cNbSJ+YFF5AnLYg87uOJ1bybq2vqHoDktej5ZTaRSHN3TvJGe9M8SMj38dYWiUFPtuufEewGELGjdm6XRIDY3VK/ikV0tRog/0C/edIaLDiGqN4XCGrcfT1Jon2hp0cCHh+sJ3c0Q8t3e4Qs+K9GxWDP7fY8aOkKE31D8flBoDEnSD4XAG3vbMYnvbMxuK2HtyrHjrraBr7fCELfny2C75wBp8p2zLW6KUbw4oewCHLfCjgNnSfhQwW9oKdui+gfpZjNCwi2QH4TCGVAEZgLX9b6xBxZHtKUbv+R4XvgurNBjRzmA4nEHX1uXSit3G6nX8C2ru97xpvFNZBfX2zgA4bGHHU2Jt2RprUAAp4C2vCAQo3+Cgs7/iBOEwhi61F2el9jCvP5u19TPBe++l9WCW1oOBcBi//nExKThUfo0a+cy7A9HwSRZlWT4bFlljWU+8Fd0SwYn0fuD9DOCwjeqSc//nmVWsGmt4YrmlrEQ3q1b6rlKFRoiwRnD4AirIcmvf3Fj/+3Rv7IM9hyuo99bzbmNZ++U1gXIM3TCYQFhRXkvvbXODFOEByeEPOaJiK30ylpV2fPFOOb44+CE9niYLy2OwbI9bzNDvlLMRu07SoET7E4rDG05JCoHHSjq0NShpGyLQW1hO0ItPMBoEqUitXvgq0miRXpwi0YM5XoScJYu5tUpp6yz4GW3aGfS6rfUjohFRUD5jResOy/Eh5LhL5ok17sAaVHGh/I/qqK61w6NDYIkBDZclAcbJNI6XUbyI4hwlMdzW60yfDTOXMCzVY9voz92VCVw2jaYLlCTXcXadJvpKUux0nCv1iRS9qiC+RnecC4KgWkZv6GoFK80LJElFa5hF8JtKIiiRl6a1LARtdDsA+bn5RffkZ6yKLYylC7TmjPGDRBhtBG8bDd2NtBL1XSQvEJZ6B+yIMKTzVaOQ4tCSMmjWMG7MHWUMWq9RheXObg1uoJtTc8hSiGlLwXG9paZbEXFhPr/ivJIlPqKC8WKHSoHBL/gMWnSbD23BCBb6cNsluudwGwzkM1QlCdsTiWCC4HrDwANag3sHstKaGNwNc7fgZhKqNCFWSD++gdu12SokIZlB27bCNVXHC7RqFWhFB31VwaUCCdDYXL/lB7QGPw5asHFhw7V/BkHrOHDByn/+/HDV/KLvP5VKUMDT5x7rlrGLyRbLR6nweq1PEVJyeP6/SZrhT4U3RB9cpDCQf2zkm6awbPzZYgEDcI8Vhgwtn+cZDNDDqdMf13qYPDYgi4jLp0afPdApaVv5kRWYkccO4Lu4YDwS4imsa/ojZBUkqyN0mfbfx6QH/AgmhoU2voNJwThdjWD6gXGhaH0cMwT1WvQdRF8vJjDnT8nXmLLhGcUc240hmixTu25Ypmd1AxaQdhbYv244AThsY2KXK2AOYd4KXmB964jEC4lewpJkwoHwP9ZlHZmQ0QqLCAD1KZDulJflTkiF2SJP7KQjH8LzHRa+uXgFTR2GgE6nSWKdTDPWsKVPDujfXOzQLUQS3/18coiOgBEVgOFwBr33S+vIh7F6Gb9TouCjp4B919rh0alRvw3RrQWAz1dPUP6Nm/cdhqbLutolP6uNhmrvRkC1DPHDf7egB3DYxvSL6/7MnvOxtaf5vP8EE/6+ogySj1tGG999gxOYjKTBigrAcpwIp2oxSyxV2nKfV8CdBV3veCtq79pC9FAyeuqQHAdC9lNqb+qA1Sv6rS511grZoD5u5Kml1SDmibE+buSw6rnUCF62hXm9pMsg9a5DvdF3dKJfgYF8WQIrVBf/t7gQba2ocTmZT733A7u5fPaujFRtSfm4Wd1hmPoqjpLYeuVl2Hu61Xuy1HtrvCwi85W0WcYMkTOfZ3E6PGvUhnVEZUPqEovjOPfZM8y5ihOvHiOK4GpcL2gEjTs3C3l+FjDyhXXYo24V6ZZ0v6Mep/YO15jOsFxPYT2zQra2vhWMxo5/i8nc/dOLav3LYnk2zfJlPgOqg6CjXw3rMDRxCsRL65UqbdjvkJDnjQL/l0hItOkgzvnGdNC5//Esn9pdlA97zDcM192mh2/cBoCo0gAO29c/oPrYQ0d0OyTJZTz5+l+Iw19HqTgAAA==
     http_version: 
   recorded_at: Thu, 11 May 2017 13:55:27 GMT
+- request:
+    method: get
+    uri: https://comicvine.gamespot.com/api/types/?api_key={CV_API_KEY}&format=json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin16.4.0 x86_64) ruby/2.3.3p222
+      Host:
+      - comicvine.gamespot.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.8.0
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - PHP/5.6.6
+      Set-Cookie:
+      - device_view=full; expires=Sun, 11-Jun-2017 14:29:57 GMT; Max-Age=2678400;
+        path=/; httponly
+      - satcv=570754786101f800b638f705a0dcb46c; path=/; domain=.comicvine.gamespot.com;
+        HttpOnly
+      Cache-Control:
+      - no-cache
+      Date:
+      - Thu, 11 May 2017 14:29:57 GMT
+      X-Phoenix-Cache-Expires:
+      - 05-11-2017 07:34:57
+      X-Phoenix-Cached:
+      - 'false'
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA43UUW6DMAwG4Lv4GU1A6SpxhT3sANOE0uC2maCOktCpqnr3hVAIkxZ3b0i/9ck2hhugMWSghvc3yKBTvXJQl3kGdDhY9M/+8Tz0ezQNHRotjtgYtEPn7FQWM0dOdL9D64QbbCOpRaiLDJbw4wYtOqFCPQ1GYnMWvS8CeRJGSIcmdGNdusD6CtVCXeX59p5xoGMsNzNltc05hs4SdVqa4thTwfWEWtlxJwnsEUdsx3WmrB2SVAhXm+KgjqRwis4pa84jV3JcTxeV7CuEK4jbFu2/UCY3P6WR2rKUUUeVHHBKI7XhxtP+AtO70ki6w0WqWIm+0+cewlVL3HTaUE9JaAxnqNixl6CHvTdOTFdzwergOdCimV73n9qSPq6dm9E6MtdGGJnE5oIIVhzoUPQpa8wi88pNeFEtJncfwuVHs8mfQo27amS1UBHJ8jnpP148+t3w7KNK/dumbujTrYZ09XHm988MLv5uxv9MDcVLDvcf1+vV4oQGAAA=
+    http_version: 
+  recorded_at: Thu, 11 May 2017 14:29:58 GMT
 recorded_with: VCR 3.0.3
