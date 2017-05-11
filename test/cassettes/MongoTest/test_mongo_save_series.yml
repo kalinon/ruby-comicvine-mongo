@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://comicvine.gamespot.com/api/series/4075-1/?api_key={CV_API_KEY}&format=json&id=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin16.4.0 x86_64) ruby/2.3.3p222
+      Host:
+      - comicvine.gamespot.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.8.0
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - PHP/5.6.6
+      Set-Cookie:
+      - device_view=full; expires=Sun, 11-Jun-2017 13:54:47 GMT; Max-Age=2678400;
+        path=/; httponly
+      - satcv=93c6486d031e3cfbe7ac326f1585c959; path=/; domain=.comicvine.gamespot.com;
+        HttpOnly
+      Cache-Control:
+      - no-cache
+      Date:
+      - Thu, 11 May 2017 13:54:47 GMT
+      X-Phoenix-Cache-Expires:
+      - 05-11-2017 06:59:47
+      X-Phoenix-Cached:
+      - 'false'
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        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
+    http_version: 
+  recorded_at: Thu, 11 May 2017 13:54:47 GMT
+recorded_with: VCR 3.0.3

@@ -149,6 +149,7 @@ module ComicVine
       end
     end
 
+
     ##
     # Extends {ComicVine::Resource::Issue} to add mongoid functions
     # @since 0.1.2
@@ -242,14 +243,50 @@ module ComicVine
       has_and_belongs_to_many :concepts, class_name: 'ComicVine::Resource::Concept', inverse_of: :volume_credits, validate: false
 
       has_many :issues, class_name: 'ComicVine::Resource::Issue', inverse_of: :volume, validate: false
-      has_one :first_issue, class_name: 'ComicVine::Resource::Issue', validate: false
-      has_one :last_issue, class_name: 'ComicVine::Resource::Issue', validate: false
+      embeds_one :first_issue, class_name: 'ComicVine::Resource::Issue', validate: false, cascade_callbacks: true
+      embeds_one :last_issue, class_name: 'ComicVine::Resource::Issue', validate: false, cascade_callbacks: true
 
       has_and_belongs_to_many :locations, class_name: 'ComicVine::Resource::Location', inverse_of: :volume_credits, validate: false
       has_and_belongs_to_many :objects, class_name: 'ComicVine::Resource::Object', inverse_of: :volume_credits, validate: false
       has_and_belongs_to_many :people, class_name: 'ComicVine::Resource::Person', inverse_of: :volume_credits, validate: false
 
       belongs_to :publisher, class_name: 'ComicVine::Resource::Publisher', inverse_of: :volumes, validate: false, optional: true
+
+
+      ##
+      # Will save child {Issues} then pass to super
+      #
+      # @example Save the document.
+      #   document.save!
+      #
+      # @param [ Hash ] options Options to pass to the save.
+      #
+      # @raise [ Errors::Validations ] If validation failed.
+      # @raise [ Errors::Callback ] If a callback returns false.
+      #
+      # @return [ true, false ] True if validation passed.
+      #
+      # @since 0.1.6
+      def save!(options = {})
+        self.issues.each { |i| i.save }
+        super
+      end
+
+      ##
+      # Will save child {Issues} then pass to super
+      #
+      # @example Save the document.
+      #   document.save
+      #
+      # @param [ Hash ] options Options to pass to the save.
+      #
+      # @return [ true, false ] True is success, false if not.
+      #
+      # @since 0.1.6
+      def save(options = {})
+        self.issues.each { |i| i.save }
+        super
+      end
 
     end
 
@@ -537,6 +574,7 @@ module ComicVine
       field :site_detail_url, type: String
 
       has_many :characters, class_name: 'ComicVine::Resource::Character', inverse_of: :origin, validate: false
+
     end
 
     ##
@@ -671,6 +709,51 @@ module ComicVine
       has_many :teams, class_name: 'ComicVine::Resource::Team', inverse_of: :publisher, validate: false
       has_many :volumes, class_name: 'ComicVine::Resource::Volume', inverse_of: :publisher, validate: false
       has_many :series, class_name: 'ComicVine::Resource::Series', inverse_of: :publisher, validate: false
+
+      ##
+      # Will save children then pass to super
+      #
+      # @example Save the document.
+      #   document.save!
+      #
+      # @param [ Hash ] options Options to pass to the save.
+      #
+      # @raise [ Errors::Validations ] If validation failed.
+      # @raise [ Errors::Callback ] If a callback returns false.
+      #
+      # @return [ true, false ] True if validation passed.
+      #
+      # @since 0.1.6
+      def save!(options = {})
+        self.characters.each { |i| i.save }
+        self.story_arcs.each { |i| i.save }
+        self.teams.each { |i| i.save }
+        self.volumes.each { |i| i.save }
+        self.series.each { |i| i.save }
+
+        super
+      end
+
+      ##
+      # Will save children then pass to super
+      #
+      # @example Save the document.
+      #   document.save
+      #
+      # @param [ Hash ] options Options to pass to the save.
+      #
+      # @return [ true, false ] True is success, false if not.
+      #
+      # @since 0.1.6
+      def save(options = {})
+        self.characters.each { |i| i.save }
+        self.story_arcs.each { |i| i.save }
+        self.teams.each { |i| i.save }
+        self.volumes.each { |i| i.save }
+        self.series.each { |i| i.save }
+        super
+      end
+
     end
 
     ##
@@ -698,11 +781,48 @@ module ComicVine
       has_and_belongs_to_many :characters, class_name: 'ComicVine::Resource::Character', inverse_of: nil, validate: false
 
       has_many :episodes, class_name: 'ComicVine::Resource::Episode', inverse_of: :series, validate: false
-      has_one :first_episode, class_name: 'ComicVine::Resource::Episode', validate: false
-      has_one :last_episode, class_name: 'ComicVine::Resource::Episode', validate: false
+      embeds_one :first_episode, class_name: 'ComicVine::Resource::Episode', validate: false, cascade_callbacks: true
+      embeds_one :last_episode, class_name: 'ComicVine::Resource::Episode', validate: false, cascade_callbacks: true
 
       has_and_belongs_to_many :location_credits, class_name: 'ComicVine::Resource::Location', inverse_of: nil, validate: false
       belongs_to :publisher, class_name: 'ComicVine::Resource::Publisher', inverse_of: :series, validate: false, optional: true
+
+      ##
+      # Will save children then pass to super
+      #
+      # @example Save the document.
+      #   document.save!
+      #
+      # @param [ Hash ] options Options to pass to the save.
+      #
+      # @raise [ Errors::Validations ] If validation failed.
+      # @raise [ Errors::Callback ] If a callback returns false.
+      #
+      # @return [ true, false ] True if validation passed.
+      #
+      # @since 0.1.6
+      def save!(options = {})
+        self.episodes.each { |i| i.save }
+
+        super
+      end
+
+      ##
+      # Will save children then pass to super
+      #
+      # @example Save the document.
+      #   document.save
+      #
+      # @param [ Hash ] options Options to pass to the save.
+      #
+      # @return [ true, false ] True is success, false if not.
+      #
+      # @since 0.1.6
+      def save(options = {})
+        self.episodes.each { |i| i.save }
+
+        super
+      end
     end
 
     ##

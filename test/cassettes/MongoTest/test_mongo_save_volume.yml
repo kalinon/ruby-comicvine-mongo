@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://comicvine.gamespot.com/api/volume/4050-51951/?api_key={CV_API_KEY}&format=json&id=51951
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin16.4.0 x86_64) ruby/2.3.3p222
+      Host:
+      - comicvine.gamespot.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.8.0
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - PHP/5.6.6
+      Set-Cookie:
+      - device_view=full; expires=Sun, 11-Jun-2017 13:57:28 GMT; Max-Age=2678400;
+        path=/; httponly
+      - satcv=1877449ee0e4064c9d0b4c913b4ed857; path=/; domain=.comicvine.gamespot.com;
+        HttpOnly
+      Cache-Control:
+      - no-cache
+      Date:
+      - Thu, 11 May 2017 13:57:28 GMT
+      X-Phoenix-Cache-Expires:
+      - 05-11-2017 07:02:28
+      X-Phoenix-Cached:
+      - 'false'
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        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
+    http_version: 
+  recorded_at: Thu, 11 May 2017 13:57:28 GMT
+recorded_with: VCR 3.0.3

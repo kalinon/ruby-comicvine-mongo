@@ -1,0 +1,56 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://comicvine.gamespot.com/api/promo/1700-1637/?api_key={CV_API_KEY}&format=json&id=1637
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      Accept-Encoding:
+      - gzip, deflate
+      User-Agent:
+      - rest-client/2.0.2 (darwin16.4.0 x86_64) ruby/2.3.3p222
+      Host:
+      - comicvine.gamespot.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx/1.8.0
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - PHP/5.6.6
+      Set-Cookie:
+      - device_view=full; expires=Sun, 11-Jun-2017 13:54:51 GMT; Max-Age=2678400;
+        path=/; httponly
+      - satcv=312210142a99a8a4773ae625633a4a0f; path=/; domain=.comicvine.gamespot.com;
+        HttpOnly
+      Cache-Control:
+      - no-cache
+      Date:
+      - Thu, 11 May 2017 13:54:51 GMT
+      X-Phoenix-Cache-Expires:
+      - 05-11-2017 06:59:51
+      X-Phoenix-Cached:
+      - 'false'
+      Content-Encoding:
+      - gzip
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        H4sIAAAAAAAAA6WUTW/bMAyG/4qgHXqJP5Qg6epbCgzFMHQb0B4FCIzMJFotydOHt6Dofx/tbit6aLslN8kkn1eU+eqeYwg+8IZ/+cRnvDPWJN6IGffbbURa1jPust1gUH6retihChhzl+KU9RRKPkH3LBYTpByV9i1O+7+xew69US0mMJ3KoSPxfUp9bGQlK+2t0YNxWO7AYux9KumTrKhEVn3w1stKnNd1IVaLc1nRmVtIqKBtsSXQvBarQohC1GwumsWiqedjCuo7Ckr+ka0tu8lGmxYlZ9q7ZFzGWLJLSBYcA9eyvYksIVhm3AAtshtwCdjXYKKGkmiGhEZ1Wlm6kLEhQ6T/a2UqlVX8niHQ8QdIEGS1XM5XF++XxcYqPQih+lB+63ekabE12R4noaFD9Qh4RSHqgHhkE4+lb0tY6LoTepjqX+PnnobxeH4HYdy8yE97GvcT+G/+ZRrGwyljZI0zL+IfRnu7u39jh2R0h1FW+FN3OZoBiz7gYPBHsZmcQiYjI4rRiMuVuKgnKzqCEP/DnxoyzVTTsMv17fX6M3snBJ9eAp+DRpUO/Zj/W40iOeL4Ft16d2BnV8U1uDN2lemJwuDHBgYM0XhHKaKs+cMv14dYSL4EAAA=
+    http_version: 
+  recorded_at: Thu, 11 May 2017 13:54:51 GMT
+recorded_with: VCR 3.0.3
